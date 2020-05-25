@@ -34,6 +34,14 @@ extern "C" {
     return (int32_t) uint256_t(x).template convert_to<int>();
   }
 
+  int32_t cast_to_number(int32_t x) {
+    return x;
+  }
+
+  char* cast_to_symbol(char* x) {
+    return x;
+  }
+
   int32_t max2(int32_t x, int32_t y) {
     return x < y ? y : x;
   }
